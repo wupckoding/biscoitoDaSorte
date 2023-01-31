@@ -225,26 +225,16 @@ main .screenTwo {
   color: #000000;
 }
 .message {
-  animation: appear 0.5s ease-in-out, spin 0.5s linear 1;
+  animation: toFadeIn 0.5s ease-in-out;
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes appear {
+@keyframes toFadeIn {
   0% {
-    transform: translateY(100%);
-    opacity: 0;
+    transform: translateY(150px) scale(0.1);
   }
+
   100% {
-    transform: translateY(0%);
-    opacity: 1;
+    transform: translateY(0px) scale(1);
   }
 }
 
