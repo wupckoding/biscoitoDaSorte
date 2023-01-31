@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Biscoito da Sorte</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <script src="index.js" defer></script>
+    <div class="part1">
+      <div class="screenOne">
+        <h1>Qual é a sua sorte de hoje?</h1>
+        <p>Abra o biscoito e descubra!</p>
+        <button class="btn1" id="closedCookie">
+          <img
+            src="https://cdn.discordapp.com/attachments/994274010030411786/1069458192209297408/Biscoitofechado.png"
+            alt="Biscoito fechado"
+          />
+        </button>
+      </div>
+    </div>
+
+    <main class="part2 hide">
+      <div class="screenTwo">
+        <h1>Aqui está a sua sorte de hoje:</h1>
+        <p class="message"></p>
+        <button class="btn2">
+          <img
+            src="https://cdn.discordapp.com/attachments/994274010030411786/1069458304725688412/opened-cookie.png"
+            alt="Biscoito aberto"
+          />
+        </button>
+
+        <a href="index.html">
+          <button class="btn3">Abrir outro biscoito</button></a
+        >
+      </div>
+    </main>
+  </body>
 </html>
