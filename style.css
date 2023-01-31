@@ -71,13 +71,106 @@ p {
   background: none;
   border: none;
   cursor: pointer;
-  transition: all 0.5s;
 }
 .btn1:hover {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+  -webkit-animation: shake 4s ease-in 0s 1 normal;
+  -moz-animation: shake 4s ease-in 0s 1 normal;
+  -ms-animation: shake 4s ease-in 0s 1 normal;
+  animation: shake 4s ease-in 0s 1 normal;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+  }
+  2% {
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+  }
+  4% {
+    transform: rotate(-18deg);
+    -webkit-transform: rotate(-18deg);
+  }
+  6% {
+    transform: rotate(18deg);
+    -webkit-transform: rotate(18deg);
+  }
+  8% {
+    transform: rotate(-22deg);
+    -webkit-transform: rotate(-22deg);
+  }
+  10% {
+    transform: rotate(22deg);
+    -webkit-transform: rotate(22deg);
+  }
+  12% {
+    transform: rotate(-18deg);
+    -webkit-transform: rotate(-18deg);
+  }
+  14% {
+    transform: rotate(18deg);
+    -webkit-transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+  }
+  18% {
+    transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+  }
+  20% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+  }
+  2% {
+    transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+  }
+  4% {
+    transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+  }
+  6% {
+    transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+  }
+  8% {
+    transform: rotate(-22deg);
+    -ms-transform: rotate(-22deg);
+  }
+  10% {
+    transform: rotate(22deg);
+    -ms-transform: rotate(22deg);
+  }
+  12% {
+    transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+  }
+  14% {
+    transform: rotate(18deg);
+    -ms-transform: rotate(-18deg);
+  }
+  16% {
+    transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+  }
+  18% {
+    transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+  }
+  20% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+  }
 }
 
 /*screen 2*/
@@ -130,6 +223,29 @@ main .screenTwo {
   text-align: center;
 
   color: #000000;
+}
+.message {
+  animation: appear 0.5s ease-in-out, spin 0.5s linear 1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 .btn3 {
